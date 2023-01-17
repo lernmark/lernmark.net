@@ -3,19 +3,65 @@
   <head>
     <meta charset="utf-8">
     <title>Lernmark</title>
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">    
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">    
   </head>
   <body class="container"> 
     <header data-theme="dark"> 
-     <article>
-        <h1>Paul Lernmark</h1>
+        
+        <hgroup>
+          <h1 style="font-family: Calistoga;">Paul Lernmark</h1>
+          <h2>Urban dweller</h2>
+        </hgroup>        
         <nav>
-          <!-- navigation -->
+          <ul>
+            <li>
+              <details role="list">
+                <summary aria-haspopup="listbox" role="button" class="secondary">Theme</summary>
+                <ul role="listbox">
+                  <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+                  <li><a href="#" data-theme-switcher="light">Light</a></li>
+                  <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+                </ul>
+              </details>
+            </li>            
+            <li>
+              <details role="list">
+                <summary aria-haspopup="listbox">Work</summary>
+                <ul role="listbox">
+                  <li><a href="../preview/">Reston</a></li>
+                  <li><a href="../preview-rtl/">Tromb</a></li>
+                  <li><a href="../classless/">Strand</a></li>
+                  <li><a href="../basic-template/">Amantech</a></li>
+                  <li><a href="../company/">Påmind</a></li>
+                  <li><a href="../google-amp/">PinkTech</a></li>
+                  <li><a href="../sign-in/">Acne Studios</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
         </nav>
-      </article>
     </header>     
-    <main>
-      <code>Lorem Ipsum dolor set!</code>
+    <main class="container">
+
+      <!-- Preview -->
+      <section id="preview">
+        <h2>Preview</h2>
+        <p>Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas.</p>
+        <form>
+          <div class="grid">
+            <input type="text" name="firstname" placeholder="First name" aria-label="First name" required>
+            <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+            <button type="submit">Subscribe</button>
+          </div>
+          <fieldset>
+            <label for="terms">
+              <input type="checkbox" role="switch" id="terms" name="terms">
+              I agree to the <a href="#" onclick="event.preventDefault()">Privacy Policy</a>
+            </label>
+          </fieldset>
+        </form>
+      </section><!-- ./ Preview -->    
     </main>
   </body>
 </html>
